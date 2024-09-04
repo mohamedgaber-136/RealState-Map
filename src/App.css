@@ -1,0 +1,207 @@
+.cls-rect {
+  fill: transparent;
+}
+
+
+.square-point:hover {
+  transition: all 0.2s ease-in-out;
+  border: 2px black solid !important;
+}
+body{
+  overflow-x: hidden;
+}
+.modal-header .btn-close {
+  filter: invert(100%) brightness(100%) !important;
+}
+.modal-header{
+  border: none !important;
+  background: rgba(255, 255, 255, 0.09);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+-webkit-backdrop-filter: blur(7.7px);
+}
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgb(82, 81, 81);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-color: black !important;
+}
+.modal-90ws{
+  background-position: center !important;
+  background-size: cover !important;
+  width: 100% !important;
+  height: 100vh !important; 
+  background-repeat: no-repeat !important;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+
+-webkit-backdrop-filter: blur(7.7px);
+
+}
+.modal-content{
+  
+  box-shadow: 0 0 20px 2px #000 !important;
+  border:1px solid rgba(255, 255, 255, 0.536) !important;
+  margin-top:70px !important
+}
+.modal-content img {
+  border-radius: 0 0 10px 10px !important ;
+}
+.swiper-button-prev, .swiper-button-next {
+  color :black !important
+}
+.swiper-slide {
+  height: 400px !important; 
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden !important;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.toolTipContent{
+  position: fixed !important;
+  width: auto !important;
+  height: 40px !important;
+  display: flex;
+  justify-content: center;
+  font-size: 12px !important;
+  align-items: center;
+  color : white !important ;
+  border-radius: 10px;
+  padding: 0 5px !important;
+  z-index: 999999999999999999999999999999999999999;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.opacity-0{
+  opacity: 0;
+}
+.opacity-1{
+  opacity: 1;
+}
+.logoLogin{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 20px 0;
+}
+.LoginParent{
+  background-position: center;
+  background-size: cover;
+}
+.loginGlass{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+width: 35%;
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media(max-width:768px){
+  .loginGlass{
+    width: 75%;
+  }
+}
+.button {
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  background-color: #151515;
+  color: #eee;
+  border-radius: 7px;
+  font-weight: 600;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.button-span {
+  color: #aaa;
+}
+.fixedImg{
+  position:fixed;
+  top:-20px;
+  width:100vw;;
+  z-index:999999; 
+}
+/* fixed */
+.fixedImg img{
+  object-fit:cover  ;
+  transform:scale(1.2);
+  height:100%;
+  width:100%
+}
+@media(max-width:425px){
+  .fixedImg img{
+    object-fit:cover  ;
+    transform:scale(1.2);
+    height:100%;
+    width:100%
+  }
+  .fixedImg{
+    top:-5px;
+  }
+}
+.bgBlack{
+  background-color: #000 !important;
+}
+.loading{
+  animation: changecolor 3s linear forwards ;
+}
+@keyframes changecolor{
+  0%{
+    filter: brightness(0%);
+  }
+  100%{
+    filter: brightness(100%);
+  }
+}
